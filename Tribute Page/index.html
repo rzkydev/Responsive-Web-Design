@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute to Nikola Tesla</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="antialiased">
+
+    <!-- Main container for all page content -->
+    <main id="main" class="container mx-auto px-4 py-8 md:py-12">
+
+        <!-- Title of the tribute page -->
+        <header class="text-center mb-8">
+            <h1 id="title" class="text-4xl md:text-5xl font-bold text-slate-800">Nikola Tesla</h1>
+            <p class="text-lg text-slate-600 mt-2">The Man Who Invented the 20th Century</p>
+        </header>
+
+        <!-- Image container -->
+        <figure id="img-div" class="bg-white p-4 md:p-6 rounded-lg shadow-md max-w-4xl mx-auto text-center">
+            <!-- The image of Nikola Tesla -->
+            <img 
+                id="image" 
+                src="https://images.unsplash.com/photo-1631027134303-a9c6a7f05f7a?q=80&w=1974&auto=format&fit=crop" 
+                alt="A portrait of Nikola Tesla"
+                onerror="this.onerror=null;this.src='https://placehold.co/1200x800/e2e8f0/475569?text=Nikola+Tesla';">
+            <!-- Caption for the image -->
+            <figcaption id="img-caption" class="mt-4 text-sm md:text-base">
+                Nikola Tesla in his Colorado Springs laboratory around 1899.
+            </figcaption>
+        </figure>
+
+        <!-- Main content with information about Tesla -->
+        <section id="tribute-info" class="bg-white p-6 md:p-8 rounded-lg shadow-md max-w-4xl mx-auto mt-8">
+            <h2 class="text-2xl font-semibold text-center mb-6 text-slate-700">A Timeline of His Life & Achievements</h2>
+            <ul class="space-y-4 list-disc list-inside text-slate-600 leading-relaxed">
+                <li><strong>1856</strong> - Born in Smiljan, Austrian Empire (modern-day Croatia).</li>
+                <li><strong>1882</strong> - Began working for the Continental Edison Company in Paris, where he conceived the idea for the induction motor.</li>
+                <li><strong>1884</strong> - Immigrated to the United States and briefly worked with Thomas Edison before they parted ways.</li>
+                <li><strong>1887</strong> - Founded the Tesla Electric Company and filed for several patents for his AC induction motor and polyphase system.</li>
+                <li><strong>1891</strong> - Invented the "Tesla Coil," an electrical resonant transformer circuit used to produce high-voltage, low-current, high-frequency alternating-current electricity.</li>
+                <li><strong>1893</strong> - Demonstrated wireless lighting and power transmission at the World's Columbian Exposition in Chicago.</li>
+                <li><strong>1898</strong> - Demonstrated the world's first radio-controlled boat, showcasing the potential of wireless communication and robotics.</li>
+                <li><strong>1899</strong> - Conducted experiments in Colorado Springs, studying atmospheric electricity and achieving groundbreaking results in high-voltage power transmission.</li>
+                <li><strong>1901-1917</strong> - Worked on the Wardenclyffe Tower project, an early wireless transmission station designed for transatlantic wireless telephony and broadcasting.</li>
+                <li><strong>1943</strong> - Died at the age of 86 in New York City. Much of his work laid the foundation for modern electrical and communication systems.</li>
+            </ul>
+        </section>
+
+        <!-- Link to external site for more information -->
+        <footer class="text-center mt-8">
+            <p class="text-slate-600">
+                To learn more about this incredible inventor, visit his 
+                <a 
+                    id="tribute-link" 
+                    href="https://en.wikipedia.org/wiki/Nikola_Tesla" 
+                    target="_blank"
+                    class="font-semibold underline"
+                >Wikipedia page</a>.
+            </p>
+        </footer>
+
+    </main>
+
+</body>
+</html>

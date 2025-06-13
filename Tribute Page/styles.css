@@ -1,0 +1,32 @@
+/* Custom styles to supplement Tailwind and fulfill project requirements */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f4f8; /* A light, clean background color */
+    color: #1e293b; /* Dark slate text for good contrast */
+}
+
+/* Style for the image to be responsive and centered */
+#image {
+    max-width: 100%;
+    height: auto;
+    display: block; /* To allow margin auto to work */
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.5rem; /* Rounded corners for the image */
+}
+
+/* Style for the image caption */
+#img-caption {
+    font-style: italic;
+    color: #475569; /* A slightly lighter text color for the caption */
+}
+
+/* Styling for the tribute link */
+#tribute-link {
+    color: #2563eb; /* A nice blue for the link */
+    transition: color 0.3s ease;
+}
+
+#tribute-link:hover {
+    color: #1d4ed8; /* Darker blue on hover */
+}
