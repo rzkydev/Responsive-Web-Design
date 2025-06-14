@@ -1,0 +1,336 @@
+/* General Styles */
+:root {
+    --primary-color: #007BFF;
+    --secondary-color: #6C757D;
+    --background-color: #f8f9fa;
+    --text-color: #212529;
+    --container-bg: #ffffff;
+    --border-color: #dee2e6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header and Navigation */
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--container-bg);
+    border-bottom: 1px solid var(--border-color);
+    padding: 15px 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+#header-img {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+
+.logo-text {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+
+#nav-bar {
+    display: flex;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--secondary-color);
+    margin: 0 15px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--primary-color);
+}
+
+/* Main content needs top padding to not be obscured by the fixed header */
+main {
+    padding-top: 90px;
+}
+
+/* Sections */
+section {
+    padding: 60px 0;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+}
+
+/* Hero Section with Form */
+#hero {
+    text-align: center;
+}
+
+#hero h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+#hero p {
+    margin-bottom: 20px;
+    color: var(--secondary-color);
+}
+
+#form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#email {
+    padding: 12px 15px;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+    width: 300px;
+    font-size: 1rem;
+}
+
+#submit {
+    padding: 12px 25px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#submit:hover {
+    background-color: #0056b3;
+}
+
+/* Features Section */
+#features .features-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.feature {
+    display: flex;
+    align-items: flex-start;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+}
+
+.feature-icon {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-right: 25px;
+    width: 60px;
+    text-align: center;
+}
+
+.feature-text h3 {
+    margin-bottom: 5px;
+    font-size: 1.25rem;
+}
+
+.feature-text p {
+    color: var(--secondary-color);
+}
+
+/* How It Works Section */
+#how-it-works {
+    text-align: center;
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+#video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Pricing Section */
+#pricing .pricing-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: var(--container-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    text-align: center;
+    width: 300px;
+    padding: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.card-header {
+    background-color: #f1f1f1;
+    padding: 15px 0;
+    font-weight: 700;
+    font-size: 1.2rem;
+    border-radius: 5px 5px 0 0;
+    margin: -30px -30px 20px -30px;
+}
+
+.card .price {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.card ul {
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+.card li {
+    padding: 8px 0;
+}
+
+.card .btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 30px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.card .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #e9ecef;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer .container {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     color: var(--secondary-color);
+     font-size: 0.9rem;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+}
+
+footer li {
+    margin-left: 15px;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+footer a:hover {
+    color: var(--primary-color);
+}
+
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+    #header {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    #nav-bar {
+        margin-top: 10px;
+    }
+
+    main {
+        padding-top: 130px; /* Adjust for taller header */
+    }
+
+    #hero h1 {
+        font-size: 1.8rem;
+    }
+
+    #form {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    #email {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .feature {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .feature-icon {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}
